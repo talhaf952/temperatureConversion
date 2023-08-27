@@ -27,6 +27,14 @@ int main() {
         cout << "The Temperature in Celsius: " << celsius << endl;
         cout << "The Temperature in Fahrenheit: " << fahrenheit << endl;
         cout << "The Temperature in Kelvin: " << Kelvin << endl;
+    } else if (unit == 'k' || unit == 'K') {
+        cout << "Enter Temperature in Kelvin: ";
+        cin >> Kelvin;
+        celsius = Kelvin - 273.15;
+        fahrenheit = (celsius * 9.0) / 5.0 + 32;
+        cout << "The Temperature in Celsius: " << celsius << endl;
+        cout << "The Temperature in Fahrenheit: " << fahrenheit << endl;
+        cout << "The Temperature in Kelvin: " << Kelvin << endl;
     } else {
         cout << "Wrong Input, Try again." << endl;
     }
